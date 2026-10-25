@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 590">
+<rect width="800" height="590" fill="#fffdfa"/>
+<g stroke="#645c50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 329Q92 151 204 236T432 209Q516 95 611 250T789 214" fill="#a5c4a4"/>
+<path d="M0 392Q100 315 225 359T456 327Q624 319 800 364V582H0Z" fill="#d9d1b5"/>
+<path d="M87 306Q100 253 109 293M139 305Q159 246 166 294M179 306Q199 266 214 304" stroke="#aabac5" fill="none"/>
+<path d="M31 414Q157 407 269 408T482 370Q566 332 704 367" fill="none" stroke="#8a8a78" stroke-width="16"/>
+<path d="M32 413Q157 406 269 407T482 369Q566 331 704 366" fill="none" stroke="#c0ab88" stroke-width="10"/>
+<path d="M38 455Q157 430 271 469Q303 480 340 468" fill="#8dbccd"/>
+<path d="M34 448Q148 421 276 459" stroke="#407d95" fill="none"/>
+<path d="M99 427Q108 390 129 398Q149 398 154 430" fill="#f0c5a0"/>
+<circle cx="127" cy="386" r="27" fill="#f0c5a0"/><path d="M112 383h4m19 0h4m-20 11q10 10 19 0" stroke-width="3" fill="none"/>
+<path d="M388 360l-24 79h73l-25-79Z" fill="#d3a77b"/>
+<circle cx="401" cy="336" r="31" fill="#f1c7a5"/>
+<path d="M359 313Q399 271 440 314Z" fill="#d9b15e"/>
+<path d="M387 340h5m19 0h5M393 351q8-5 16 0" stroke-width="3" fill="none"/>
+<path d="M531 367l-14 90h81l-10-90Z" fill="#84a3b7"/><circle cx="561" cy="340" r="30" fill="#ebc6a5"/>
+<path d="M541 343h5m25 0h5M551 357q13-10 20 0" stroke-width="3" fill="none"/>
+<path d="M474 367l48-13M600 369l55-33" fill="none" stroke-width="10"/>
+<path d="M609 232q72-41 138 1l-1 95-137 0Z" fill="#fcf5dd"/>
+<text x="626" y="292" fill="#6b7657" stroke="none" font-size="57" font-weight="bold">¥</text>
+</g>
+<g font-family="sans-serif" fill="#504a42" text-anchor="middle"><text x="400" y="83" font-size="42" font-weight="bold">宇奈月温泉事件</text><text x="400" y="546" font-size="20">引湯管の撤去を求める地主と温泉会社</text></g>
+</svg>

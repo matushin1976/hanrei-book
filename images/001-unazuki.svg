@@ -1,24 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 590">
-<rect width="800" height="590" fill="#fffdfa"/>
-<g stroke="#645c50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-<path d="M12 329Q92 151 204 236T432 209Q516 95 611 250T789 214" fill="#a5c4a4"/>
-<path d="M0 392Q100 315 225 359T456 327Q624 319 800 364V582H0Z" fill="#d9d1b5"/>
-<path d="M87 306Q100 253 109 293M139 305Q159 246 166 294M179 306Q199 266 214 304" stroke="#aabac5" fill="none"/>
-<path d="M31 414Q157 407 269 408T482 370Q566 332 704 367" fill="none" stroke="#8a8a78" stroke-width="16"/>
-<path d="M32 413Q157 406 269 407T482 369Q566 331 704 366" fill="none" stroke="#c0ab88" stroke-width="10"/>
-<path d="M38 455Q157 430 271 469Q303 480 340 468" fill="#8dbccd"/>
-<path d="M34 448Q148 421 276 459" stroke="#407d95" fill="none"/>
-<path d="M99 427Q108 390 129 398Q149 398 154 430" fill="#f0c5a0"/>
-<circle cx="127" cy="386" r="27" fill="#f0c5a0"/><path d="M112 383h4m19 0h4m-20 11q10 10 19 0" stroke-width="3" fill="none"/>
-<path d="M388 360l-24 79h73l-25-79Z" fill="#d3a77b"/>
-<circle cx="401" cy="336" r="31" fill="#f1c7a5"/>
-<path d="M359 313Q399 271 440 314Z" fill="#d9b15e"/>
-<path d="M387 340h5m19 0h5M393 351q8-5 16 0" stroke-width="3" fill="none"/>
-<path d="M531 367l-14 90h81l-10-90Z" fill="#84a3b7"/><circle cx="561" cy="340" r="30" fill="#ebc6a5"/>
-<path d="M541 343h5m25 0h5M551 357q13-10 20 0" stroke-width="3" fill="none"/>
-<path d="M474 367l48-13M600 369l55-33" fill="none" stroke-width="10"/>
-<path d="M609 232q72-41 138 1l-1 95-137 0Z" fill="#fcf5dd"/>
-<text x="626" y="292" fill="#6b7657" stroke="none" font-size="57" font-weight="bold">¥</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760">
+<defs><filter id="p"><feTurbulence type="fractalNoise" baseFrequency=".028" numOctaves="3" seed="8" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter><pattern id="paper" width="75" height="75" patternUnits="userSpaceOnUse"><path d="M5 5l1 1M40 63l2-1M69 30l1 1" stroke="#c8bda4" opacity=".32"/></pattern></defs>
+<rect width="1000" height="760" fill="#fffaf0"/><rect width="1000" height="760" fill="url(#paper)"/>
+<g filter="url(#p)" stroke="#615a4e" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 357L90 245 163 295 236 196 337 291 418 190 525 316 627 168 735 312 839 187 1000 340V650H0Z" stroke-width="5" fill="#b5cbb6"/>
+<path d="M0 414Q110 348 235 391T456 361Q587 326 686 384T1000 360V702H0Z" stroke-width="5" fill="#cbd3ad"/>
+<g stroke="#577b5f" stroke-width="4" fill="#769876"><path d="M40 372l25-89 28 89Z"/><path d="M113 352l22-66 26 66Z"/><path d="M292 349l30-90 29 90Z"/><path d="M777 343l30-104 34 104Z"/><path d="M908 346l25-87 34 87Z"/></g>
+<path d="M18 554Q203 518 338 546T611 500Q747 451 958 470" fill="none" stroke="#87796a" stroke-width="32"/>
+<path d="M18 554Q203 518 338 546T611 500Q747 451 958 470" fill="none" stroke="#bfa988" stroke-width="23"/>
+<path d="M17 555Q197 519 336 545T608 500Q745 452 954 469" fill="none" stroke="#e2d1ac" stroke-width="11" stroke-dasharray="42 17"/>
+<path d="M18 554Q203 518 338 546T611 500Q747 451 958 470" fill="none" stroke="#6e675c" stroke-width="3"/>
+<path d="M20 602Q123 578 252 620Q313 648 355 621L340 710H0V608Z" fill="#90bccc" stroke-width="5"/>
+<path d="M12 628q64-17 126-8m-80 37q80-18 165-1" stroke="#5f91ab" stroke-width="4" fill="none"/>
+<path d="M46 541q-36-40-5-74M115 559q-20-34 3-61M181 567q-14-39 6-61" fill="none" stroke="#aeb9c4" stroke-width="8" opacity=".8"/>
+<g transform="translate(208 484)">
+<path d="M-43 39Q-52-48 0-57Q48-56 44 44" fill="#f1c69e" stroke-width="4"/>
+<path d="M-33-25Q-42-59-3-64Q34-59 38-25Q7-40-33-25" fill="#454e4e" stroke-width="4"/>
+<circle cx="-13" cy="-1" r="3" fill="#544639" stroke="none"/><circle cx="15" cy="-1" r="3" fill="#544639" stroke="none"/>
+<path d="M-12 17q12 10 24 0" fill="none" stroke-width="3"/>
+<path d="M-46 42Q-78 70-73 106M45 42Q77 66 66 109" fill="none" stroke="#f0c59e" stroke-width="15"/>
 </g>
-<g font-family="sans-serif" fill="#504a42" text-anchor="middle"><text x="400" y="83" font-size="42" font-weight="bold">宇奈月温泉事件</text><text x="400" y="546" font-size="20">引湯管の撤去を求める地主と温泉会社</text></g>
+<g transform="translate(460 450)">
+<path d="M-61 53Q-42 26-34 21H28Q61 35 69 96L65 184H-74L-70 99Z" fill="#c58e65" stroke-width="5"/>
+<path d="M-15 61l-8 123m58-123 8 123" stroke="#8c5e4f" stroke-width="4" fill="none"/>
+<path d="M-45 49q-51 17-95 18" stroke="#efc79d" stroke-width="17" fill="none"/>
+<path d="M54 49q52-25 102-60" stroke="#efc79d" stroke-width="17" fill="none"/>
+<ellipse cx="0" cy="-2" rx="36" ry="45" fill="#eec6a2" stroke-width="5"/>
+<path d="M-73-48Q0-110 67-48L81-30H-86Z" fill="#d7b568" stroke-width="5"/>
+<path d="M-30-52q33 7 61 0" stroke="#9e7b4c" stroke-width="4" fill="none"/>
+<path d="M-16-4h4m27 0h4" stroke="#55473c" stroke-width="5"/>
+<path d="M-12 19q13-6 28 0" stroke-width="3" fill="none"/>
+</g>
+<g transform="translate(731 478)">
+<path d="M-56 53Q-34 23-20 25H28Q62 49 69 125L65 186H-68L-66 126Z" fill="#749bae" stroke-width="5"/>
+<path d="M-53 59q-37 15-72 40" stroke="#ecc6a2" stroke-width="15" fill="none"/>
+<path d="M56 60q40 2 64-17" stroke="#ecc6a2" stroke-width="15" fill="none"/>
+<ellipse cx="0" cy="-6" rx="36" ry="42" fill="#ebc4a3" stroke-width="5"/>
+<path d="M-35-25q0-47 32-42 33 0 37 42" fill="#6b685d" stroke-width="4"/>
+<path d="M-17-9h5m29 0h5" stroke-width="5"/><path d="M-12 18q15-10 27 0" fill="none" stroke-width="3"/>
+<path d="M-1 31l-18 39 23 17 19-19Z" fill="#e6e1d9" stroke-width="3"/>
+</g>
+<path d="M518 290q55-88 131-23l-7 102H518Z" fill="#fffdf7" stroke-width="4"/>
+<path d="M559 320l45-44m-45 0 45 44" stroke="#b35e55" stroke-width="9"/>
+<path d="M657 261q30-69 123-61 90 10 98 93-4 53-54 68l-40 38-3-45q-99 10-124-93Z" fill="#fffdf7" stroke-width="4"/>
+<path d="M706 269q35-22 87 0" stroke="#a7896a" stroke-width="5" fill="none"/>
+<text x="719" y="330" font-family="sans-serif" font-size="64" font-weight="bold" stroke="none" fill="#937648">¥</text>
+<path d="M898 528v-77l28-7 27 7v77M895 529h62" fill="#f2ead1" stroke-width="4"/>
+<path d="M913 450v-41h22v41" fill="#998a6a" stroke-width="3"/>
+</g>
+<g text-anchor="middle" font-family="sans-serif" fill="#51483d"><text x="500" y="90" font-size="58" font-weight="bold" letter-spacing="7">宇奈月温泉事件</text><path d="M270 111Q500 117 738 111" fill="none" stroke="#b8a281" stroke-width="3"/><text x="500" y="735" font-size="23" opacity=".75">温泉へ向かう引湯管をめぐる争い</text></g>
 </svg>

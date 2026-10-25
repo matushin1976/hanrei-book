@@ -1,24 +1,42 @@
-<!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>判例らくがき帳</title>
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5efe3"><title>判例らくがき帳 | 憲法・行政法・民法</title>
 <style>
-:root{font-family:system-ui,"Noto Sans JP",sans-serif;color:#35312d;background:#f7f4e9}
-*{box-sizing:border-box}body{margin:0}main{max-width:850px;margin:0 auto;padding:16px 16px 55px}
-h1{font-size:1.4rem}.sheet{background:#fff;border:1px solid #ded6c7;border-radius:14px;padding:14px;box-shadow:0 8px 25px #493a2417}
-img{display:block;max-width:100%;max-height:60vh;margin:auto;object-fit:contain}
-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:18px 0}
-button{font-size:1rem;padding:12px;border:1px solid #aca499;border-radius:9px;background:#fff;cursor:pointer}
-button:disabled{opacity:.3;cursor:default}.description{background:#fffef9;border-radius:12px;padding:16px 20px;line-height:1.85}
-h2{margin:.1em 0}small{color:#666}.tip{font-size:.85rem;color:#777}
-</style></head><body><main><h1>📖 判例らくがき帳</h1>
-<div class="sheet"><img id="drawing" alt="判例イラスト"></div>
-<nav><button id="prev">◀ 前のページ</button><span id="count"></span><button id="next">次のページ ▶</button></nav>
-<section class="description"><h2 id="title"></h2><small id="category"></small><p id="story"></p><p><b>裁判所の判断：</b><span id="judgment"></span></p><p><b>試験ポイント：</b><span id="point"></span></p></section>
-<p class="tip">← → キーでもページをめくれます。ページ番号はURLに保存されます。</p>
-</main><script src="pages.js"></script><script>
-let i=Math.max(0,Math.min(PAGES.length-1,(parseInt(location.hash.slice(1))||1)-1));
-const el=id=>document.getElementById(id);
-function render(){let p=PAGES[i];["title","category","story","judgment","point"].forEach(k=>el(k).textContent=p[k]);el("drawing").onerror=()=>{el("drawing").onerror=null;el("drawing").src="images/001-unazuki.svg";};el("drawing").src=p.image;el("drawing").alt=p.title;el("count").textContent=(i+1)+" / "+PAGES.length;el("prev").disabled=i===0;el("next").disabled=i===PAGES.length-1;history.replaceState(null,"","#"+(i+1));}
-el("prev").onclick=()=>{if(i>0){i--;render()}};el("next").onclick=()=>{if(i<PAGES.length-1){i++;render()}};
-window.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")el("prev").click();if(e.key==="ArrowRight")el("next").click()});
-render();
+:root{--ink:#32342c;--orange:#d96f39;--paper:#fffdf8;--bg:#f5efe3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Noto Sans JP",sans-serif}
+header{border-bottom:1px solid #dfd3c4;background:#fffaf2}header .wrap{max-width:1000px;margin:auto;padding:18px 20px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+h1{font-size:clamp(1.35rem,4vw,1.9rem);margin:0}.subtitle{font-size:.8rem;color:#777;margin-top:5px}
+main{max-width:1000px;margin:24px auto;padding:0 16px 50px}
+.controls{display:flex;gap:8px;flex-wrap:wrap}.controls select,.controls button{background:white;border:1px solid #cfc4b2;border-radius:9px;padding:9px 12px;color:#3d4036;font-size:14px}
+.book{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);gap:22px}
+.illustration{border-radius:12px;border:1px solid #dccdb9;background:var(--paper);box-shadow:4px 6px 0 #e1d7c8;min-height:390px;padding:12px;display:flex;align-items:center;justify-content:center}
+.illustration img{width:100%;max-height:68vh;object-fit:contain}
+.details{background:var(--paper);border:1px solid #e5d9c9;border-radius:12px;padding:24px;line-height:1.8}
+.eyebrow{color:var(--orange);font-weight:800;letter-spacing:.08em;font-size:12px}
+h2{font-size:1.55rem;margin:7px 0}.meta{font-size:.8rem;color:#777}.block{border-top:1px dashed #d9cdbd;padding-top:13px;margin-top:15px}
+.block strong{display:block;font-size:.86rem;color:#915f3e;margin-bottom:4px}.block p{margin:0}.pager{display:flex;justify-content:center;align-items:center;gap:15px;margin:23px 0}
+.pager button{border:1px solid #aeb1a0;background:#fffdf8;border-radius:50px;padding:12px 17px;font-weight:700;cursor:pointer}
+button:disabled{opacity:.3;cursor:default}
+footer{text-align:center;font-size:.8rem;color:#756c61;margin-top:24px}
+@media(max-width:720px){.book{grid-template-columns:1fr}.illustration{min-height:250px}.illustration img{max-height:55vh}.details{padding:18px}}
+</style></head><body>
+<header><div class="wrap"><div><h1>📖 判例らくがき帳</h1><div class="subtitle">絵で思い出す、憲法・行政法・民法の有名判例</div></div>
+<div class="controls"><select id="category" aria-label="分野"><option value="">すべての分野</option><option value="憲法">憲法</option><option value="行政法">行政法</option><option value="民法">民法</option></select><select id="jump" aria-label="事件を選ぶ"></select></div></div></header>
+<main><div class="book">
+<section class="illustration" aria-label="判例イラスト"><img id="drawing" alt="判例イラスト"></section>
+<section class="details"><div class="eyebrow" id="number">CASE 001</div><h2 id="title"></h2><div class="meta" id="categoryText"></div>
+<div class="block"><strong>何があった？</strong><p id="story"></p></div>
+<div class="block"><strong>裁判所の判断</strong><p id="judgment"></p></div>
+<div class="block"><strong>試験で覚えるポイント</strong><p id="point"></p></div></section></div>
+<div class="pager"><button id="prev">← 前の事件</button><span id="count"></span><button id="next">次の事件 →</button></div>
+<footer>スマホなら左右にスワイプ、PCなら矢印キーでもページをめくれます。</footer></main>
+<script src="pages.js"></script><script>
+const $=id=>document.getElementById(id);let filtered=[],index=0;
+function updateFilter(keep){const last=filtered[index];filtered=PAGES.map((p,i)=>({...p,sourceIndex:i})).filter(p=>!$("category").value||p.category.includes($("category").value));index=keep?Math.max(0,filtered.findIndex(p=>p.sourceIndex===last?.sourceIndex)):0;if(index>=filtered.length)index=0;
+$("jump").replaceChildren(...filtered.map((p,i)=>{const o=document.createElement("option");o.value=i;o.textContent=(i+1)+". "+p.title;return o}));draw()}
+function draw(){if(!filtered.length){$("title").textContent="該当なし";return}let p=filtered[index];$("title").textContent=p.title;$("categoryText").textContent=p.category;$("story").textContent=p.story;$("judgment").textContent=p.judgment;$("point").textContent=p.point;$("number").textContent="CASE "+String(p.sourceIndex+1).padStart(3,"0");$("count").textContent=(index+1)+" / "+filtered.length;
+$("drawing").onerror=()=>{$("drawing").onerror=null;$("drawing").src="images/001-unazuki.svg"};$("drawing").src=p.image;$("drawing").alt=p.title;$("jump").value=String(index);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;history.replaceState(null,"","#"+(p.sourceIndex+1))}
+function move(n){const next=Math.max(0,Math.min(filtered.length-1,index+n));if(next!==index){index=next;draw()}}
+$("prev").onclick=()=>move(-1);$("next").onclick=()=>move(1);$("jump").onchange=e=>{index=+e.target.value;draw()};$("category").onchange=()=>updateFilter(false);
+document.addEventListener("keydown",e=>{if(["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName))return;if(e.key==="ArrowLeft")move(-1);if(e.key==="ArrowRight")move(1)});
+let startX=0;$("drawing").addEventListener("touchstart",e=>{startX=e.touches[0].clientX},{passive:true});$("drawing").addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-startX;if(Math.abs(d)>65)move(d<0?1:-1)},{passive:true});
+updateFilter(false);const n=parseInt(location.hash.slice(1));if(n>=1){const k=filtered.findIndex(p=>p.sourceIndex===n-1);if(k!==-1){index=k;draw()}}
 </script></body></html>

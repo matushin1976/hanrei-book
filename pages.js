@@ -13,8 +13,8 @@ const PAGES = [
     title: "マクリーン事件",
     date: "1978-10-04",
     category: "憲法｜外国人の人権・政治活動の自由｜最高裁大法廷 昭和53年10月4日",
-    image: "https://drive.google.com/thumbnail?id=1DlbHrEocQGFE4OysaI-gUAOOcGXIELYE&sz=w1600",
-    imageSource: "https://drive.google.com/file/d/1DlbHrEocQGFE4OysaI-gUAOOcGXIELYE/view",
+    image: "https://drive.google.com/thumbnail?id=1hjrPdha7K-qomVh2Ue5PbEz0K2pJtfE-&sz=w1600",
+    imageSource: "https://drive.google.com/file/d/1hjrPdha7K-qomVh2Ue5PbEz0K2pJtfE-/view",
     story: "日本に在留する米国籍の英語教師が、ベトナム反戦運動などの政治活動に参加した。法務大臣が転職や政治活動を考慮して在留期間の更新を認めなかったため、その取消しを求めた。",
     judgment: "外国人にも権利の性質上日本国民だけを対象とするものを除き基本的人権の保障が及び、政治活動の自由も一定の範囲で保障される。ただし在留期間の更新には法務大臣の広い裁量があり、本件の更新不許可は違法ではないとした。",
     point: "「在留中の政治活動が直ちに違法」なのではない。適法な政治活動でも、在留更新の判断で消極的事情として考慮され得る。外国人には憲法上、在留の継続を要求する権利は保障されない。"

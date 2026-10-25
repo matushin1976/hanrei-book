@@ -17,7 +17,7 @@ h2{margin:.1em 0}small{color:#666}.tip{font-size:.85rem;color:#777}
 </main><script src="pages.js"></script><script>
 let i=Math.max(0,Math.min(PAGES.length-1,(parseInt(location.hash.slice(1))||1)-1));
 const el=id=>document.getElementById(id);
-function render(){let p=PAGES[i];["title","category","story","judgment","point"].forEach(k=>el(k).textContent=p[k]);el("drawing").src=p.image;el("drawing").alt=p.title;el("count").textContent=(i+1)+" / "+PAGES.length;el("prev").disabled=i===0;el("next").disabled=i===PAGES.length-1;history.replaceState(null,"","#"+(i+1));}
+function render(){let p=PAGES[i];["title","category","story","judgment","point"].forEach(k=>el(k).textContent=p[k]);el("drawing").onerror=()=>{el("drawing").onerror=null;el("drawing").src="images/001-unazuki.svg";};el("drawing").src=p.image;el("drawing").alt=p.title;el("count").textContent=(i+1)+" / "+PAGES.length;el("prev").disabled=i===0;el("next").disabled=i===PAGES.length-1;history.replaceState(null,"","#"+(i+1));}
 el("prev").onclick=()=>{if(i>0){i--;render()}};el("next").onclick=()=>{if(i<PAGES.length-1){i++;render()}};
 window.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")el("prev").click();if(e.key==="ArrowRight")el("next").click()});
 render();

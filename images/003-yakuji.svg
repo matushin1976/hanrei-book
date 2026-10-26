@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" role="img" aria-label="近接する二つの薬局と開店を阻む役人のイラスト">
+<defs><filter id="rough"><feTurbulence baseFrequency=".006" numOctaves="2" seed="8"/><feDisplacementMap in="SourceGraphic" scale="2.5"/></filter><pattern id="paper" width="26" height="26" patternUnits="userSpaceOnUse"><rect width="26" height="26" fill="#fffaf0"/><path d="M2 5l4 2M16 23l3-2M23 7l2 3" stroke="#dfd4c1" opacity=".38"/></pattern></defs>
+<rect width="1000" height="660" fill="url(#paper)"/><g stroke="#343331" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+<path d="M0 185Q140 166 245 185T500 180T1000 175V0H0Z" fill="#d9ecf9" stroke="none"/>
+<path d="M0 515Q300 500 500 515T1000 510V660H0Z" fill="#f4e2c8" stroke="none"/>
+<path d="M40 195L70 140H385L415 195V514H40Z" fill="#f4e2a8"/>
+<path d="M54 270H400V345H54Z" fill="#7db47c"/>
+<path d="M54 270l25 75 27-75 26 75 27-75 27 75 27-75 27 75 27-75 27 75 27-75 27 75 27-75 27 75 26-75" fill="#faf9ec" stroke-width="2.8"/>
+<path d="M87 348H375V507H87Z" fill="#e4f4f5"/><path d="M93 410H364M120 359V505M345 359V505" stroke="#a5b5b2" stroke-width="3"/>
+<path d="M205 245v-49h35v49h47v34h-47v44h-35v-44h-46v-34Z" fill="#db5947"/>
+<path d="M605 195L635 140H934L967 195V514H605Z" fill="#f6e1bc"/>
+<path d="M620 270H951V345H620Z" fill="#db765b"/>
+<path d="M620 270l24 75 25-75 24 75 25-75 24 75 25-75 24 75 25-75 24 75 25-75 24 75 25-75 25 75" fill="#fff9ed" stroke-width="2.8"/>
+<path d="M660 350H916V508H660Z" fill="#e2eff0"/><path d="M669 413H908M695 355V505M879 355V505" stroke="#a5b5b2" stroke-width="3"/>
+<path d="M755 246v-50h36v50h47v33h-47v44h-36v-44h-47v-33Z" fill="#d84b3e"/>
+<path d="M424 470H593V495H424Z" fill="#e7c65e"/><path d="M434 470v11m15-11v8m15-8v11m15-11v8m15-8v11m15-11v8m15-8v11m15-11v8m15-8v11m15-11v8" stroke-width="2"/>
+<path d="M445 516H570" stroke="#d44f3b" stroke-width="11"/><path d="M445 516l21-14m-21 14 21 14M570 516l-21-14m21 14-21 14" stroke="#d44f3b" stroke-width="8"/>
+<g><circle cx="275" cy="418" r="41" fill="#f3d1aa"/><path d="M235 410q-7-43 38-46t44 43" fill="#7b7970"/><path d="M252 418q5 6 10 0m26 0q5 6 10 0m-37 21q14 14 29 0" fill="none" stroke-width="3"/><path d="M215 504q0-60 60-60t61 60" fill="#f5f5e9"/><path d="M274 454l-9 18 11 14 11-14-11-18" fill="#5b88b1"/></g>
+<g><circle cx="732" cy="420" r="40" fill="#eac49d"/><path d="M691 411q-7-46 44-47t40 45" fill="#363636"/><path d="M711 423l12-4m21 0 12 4M717 445q16-8 31 0" fill="none" stroke-width="4"/><path d="M678 504q4-63 57-62t62 62" fill="#566b82"/><path d="M731 445l-11 18 13 18 12-18-12-18" fill="#e7ecf0"/><path d="M684 457l-44-32m0 0-13-22m13 22-24-3" fill="none" stroke-width="16"/><path d="M640 404l-22-7m22 7-5-24" fill="none" stroke-width="8"/><path d="M615 368h44v48h-44Z" fill="#d64b3c"/></g>
+<g><circle cx="898" cy="425" r="40" fill="#f0cca5"/><path d="M860 414q-2-39 41-41t38 41" fill="#74543b"/><circle cx="883" cy="427" r="3"/><circle cx="915" cy="427" r="3"/><ellipse cx="900" cy="451" rx="10" ry="13" fill="#f8f4e8"/><path d="M853 505q0-54 45-54t51 54" fill="#e7ede7"/><path d="M873 505h60v-40h-60Z" fill="#c7a26b"/><path d="M884 476h38m-27-10v20" stroke="#658b65" stroke-width="4"/></g>
+<path d="M794 123q-24-28 6-49 19-19 40-4 20-30 46-13 25-11 42 14 33-3 34 25 10 23-22 32Z" fill="#fff9ed"/>
+<path d="M832 98h89m-44-25v51m-35-20 13 24 12-24m26 0 13 24 12-24" stroke="#c6a13c" stroke-width="5" fill="none"/>
+<path d="M0 550Q280 541 500 550T1000 548" fill="none" stroke="#ae9e8c" stroke-width="4"/>
+</g></svg>

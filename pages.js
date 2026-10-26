@@ -23,8 +23,8 @@ const PAGES = [
     title: "薬局距離制限違憲判決",
     date: "1975-04-30",
     category: "憲法｜職業選択の自由・消極目的規制｜最高裁大法廷 昭和50年4月30日",
-    image: "images/003-yakuji.svg",
-    imageSource: "https://github.com/matushin1976/hanrei-book/blob/main/images/003-yakuji.svg",
+    image: "https://drive.google.com/thumbnail?id=11zvZ3m4bgbD_QY7rDNAs_c_vhvTr7-sS&sz=w1600",
+    imageSource: "https://drive.google.com/file/d/11zvZ3m4bgbD_QY7rDNAs_c_vhvTr7-sS/view",
     story: "医薬品の一般販売業を始めようとした事業者が広島県知事に許可を申請したところ、既存店との距離が県条例の配置基準に合わないとして不許可とされた。事業者は旧薬事法の距離制限が職業選択の自由に反すると訴えた。",
     judgment: "最高裁大法廷は、距離制限を定めた旧薬事法の規定は、不良医薬品の供給防止という目的のために必要かつ合理的とはいえず、憲法22条1項に違反し無効と判断した。",
     point: "違憲とされたのは薬局等の許可制そのものではなく『距離制限』。生命・健康への危険防止を目的とする消極的・警察的規制では、営業方法の規制など、より緩やかな手段で目的を達成できないかが重要。"

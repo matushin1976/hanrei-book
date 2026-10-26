@@ -21,7 +21,7 @@ footer{text-align:center;font-size:.8rem;color:#756c61;margin-top:24px}
 <header><div class="wrap"><div><h1>📖 判例らくがき帳</h1><div class="subtitle">絵で思い出す、憲法・行政法・民法の有名判例</div></div>
 <div class="controls"><select id="category" aria-label="分野"><option value="">すべての分野</option><option value="憲法">憲法</option><option value="行政法">行政法</option><option value="民法">民法</option></select><select id="jump" aria-label="事件を選ぶ"></select></div></div></header>
 <main><div class="book">
-<section class="illustration" aria-label="判例イラスト"><img id="drawing" alt="判例イラスト"></section>
+<section class="illustration" aria-label="判例イラスト"><div><img id="drawing" alt="判例イラスト"><p style="text-align:center;font-size:13px"><a id="imageLink" href="#" target="_blank" rel="noopener">画像をGoogleドライブで開く</a></p><p id="imageError" style="display:none;color:#a33;text-align:center">画像を直接表示できません。下のリンクから開いてください。</p></div></section>
 <section class="details"><div class="eyebrow" id="number">CASE 001</div><h2 id="title"></h2><div class="meta" id="categoryText"></div>
 <div class="block"><strong>何があった？</strong><p id="story"></p></div>
 <div class="block"><strong>裁判所の判断</strong><p id="judgment"></p></div>
@@ -33,7 +33,7 @@ const $=id=>document.getElementById(id);let filtered=[],index=0;
 function updateFilter(keep){const last=filtered[index];filtered=PAGES.map((p,i)=>({...p,sourceIndex:i})).filter(p=>!$("category").value||p.category.includes($("category").value));index=keep?Math.max(0,filtered.findIndex(p=>p.sourceIndex===last?.sourceIndex)):0;if(index>=filtered.length)index=0;
 $("jump").replaceChildren(...filtered.map((p,i)=>{const o=document.createElement("option");o.value=i;o.textContent=(i+1)+". "+p.title;return o}));draw()}
 function draw(){if(!filtered.length){$("title").textContent="該当なし";return}let p=filtered[index];$("title").textContent=p.title;$("categoryText").textContent=p.category;$("story").textContent=p.story;$("judgment").textContent=p.judgment;$("point").textContent=p.point;$("number").textContent="CASE "+String(p.sourceIndex+1).padStart(3,"0");$("count").textContent=(index+1)+" / "+filtered.length;
-$("drawing").onerror=()=>{$("drawing").onerror=null;$("drawing").src="images/001-unazuki.svg"};$("drawing").src=p.image;$("drawing").alt=p.title;$("jump").value=String(index);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;history.replaceState(null,"","#"+(p.sourceIndex+1))}
+$("imageLink").href=p.imageSource||p.image;$("imageError").style.display="none";$("drawing").onerror=()=>{$("imageError").style.display="block";$("drawing").style.display="none"};$("drawing").style.display="block";$("drawing").src=p.image;$("drawing").alt=p.title;$("jump").value=String(index);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;history.replaceState(null,"","#"+(p.sourceIndex+1))}
 function move(n){const next=Math.max(0,Math.min(filtered.length-1,index+n));if(next!==index){index=next;draw()}}
 $("prev").onclick=()=>move(-1);$("next").onclick=()=>move(1);$("jump").onchange=e=>{index=+e.target.value;draw()};$("category").onchange=()=>updateFilter(false);
 document.addEventListener("keydown",e=>{if(["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName))return;if(e.key==="ArrowLeft")move(-1);if(e.key==="ArrowRight")move(1)});

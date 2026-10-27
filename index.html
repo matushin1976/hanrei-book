@@ -28,12 +28,12 @@ footer{text-align:center;font-size:.8rem;color:#756c61;margin-top:24px}
 <div class="block"><strong>試験で覚えるポイント</strong><p id="point"></p></div></section></div>
 <div class="pager"><button id="prev">← 前の事件</button><span id="count"></span><button id="next">次の事件 →</button></div>
 <footer>スマホなら左右にスワイプ、PCなら矢印キーでもページをめくれます。</footer></main>
-<script src="pages.js?v=20261027-case004"></script><script>
+<script src="pages.js?v=20261028-005"></script><script>
 const $=id=>document.getElementById(id);let filtered=[],index=0;
 function updateFilter(keep){const last=filtered[index];filtered=PAGES.map((p,i)=>({...p,sourceIndex:i})).filter(p=>!$("category").value||p.category.includes($("category").value));index=keep?Math.max(0,filtered.findIndex(p=>p.sourceIndex===last?.sourceIndex)):0;if(index>=filtered.length)index=0;
 $("jump").replaceChildren(...filtered.map((p,i)=>{const o=document.createElement("option");o.value=i;o.textContent=(i+1)+". "+p.title;return o}));draw()}
 function draw(){if(!filtered.length){$("title").textContent="該当なし";return}let p=filtered[index];$("title").textContent=p.title;$("categoryText").textContent=p.category;$("story").textContent=p.story;$("judgment").textContent=p.judgment;$("point").textContent=p.point;$("number").textContent="CASE "+String(p.sourceIndex+1).padStart(3,"0");$("count").textContent=(index+1)+" / "+filtered.length;
-$("imageLink").href=p.imageSource||p.image;$("imageError").style.display="none";$("drawing").onerror=()=>{$("imageError").style.display="block";$("drawing").style.display="none"};$("drawing").style.display="block";$("drawing").src=p.image;$("drawing").alt=p.title;$("jump").value=String(index);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;history.replaceState(null,"","#"+(p.sourceIndex+1))}
+$("imageLink").href=p.imageSource||p.image||"#";$("imageLink").style.display=p.imageSource?"inline":"none";$("imageError").textContent="画像のGoogleドライブ登録は未完了です。";$("imageError").style.display=p.image?"none":"block";$("drawing").onerror=()=>{$("imageError").textContent="画像を直接表示できません。下のリンクから開いてください。";$("imageError").style.display="block";$("drawing").style.display="none"};$("drawing").style.display=p.image?"block":"none";if(p.image){$("drawing").src=p.image;}else{$("drawing").removeAttribute("src");}$("drawing").alt=p.title;$("jump").value=String(index);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;history.replaceState(null,"","#"+(p.sourceIndex+1))}
 function move(n){const next=Math.max(0,Math.min(filtered.length-1,index+n));if(next!==index){index=next;draw()}}
 $("prev").onclick=()=>move(-1);$("next").onclick=()=>move(1);$("jump").onchange=e=>{index=+e.target.value;draw()};$("category").onchange=()=>updateFilter(false);
 document.addEventListener("keydown",e=>{if(["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName))return;if(e.key==="ArrowLeft")move(-1);if(e.key==="ArrowRight")move(1)});

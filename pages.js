@@ -41,6 +41,7 @@ const PAGES = [
   }
   ,{
     title: "在外邦人選挙権訴訟",
+    imagePendingFile: "a_colorful_hand_drawn_crayon_colored_pencil_illust.png",
     date: "2005-09-14",
     category: "憲法・行政法｜選挙権・立法不作為・国家賠償｜最高裁大法廷 平成17年9月14日",
     image: "",

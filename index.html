@@ -28,7 +28,7 @@ footer{text-align:center;font-size:.8rem;color:#756c61;margin-top:24px}
 <div class="block"><strong>試験で覚えるポイント</strong><p id="point"></p></div></section></div>
 <div class="pager"><button id="prev">← 前の事件</button><span id="count"></span><button id="next">次の事件 →</button></div>
 <footer>スマホなら左右にスワイプ、PCなら矢印キーでもページをめくれます。</footer></main>
-<script src="pages.js?v=20261029-006"></script><script>
+<script src="pages.js?v=20261030-007"></script><script>
 const $=id=>document.getElementById(id);let filtered=[],index=0;
 function updateFilter(keep){const last=filtered[index];filtered=PAGES.map((p,i)=>({...p,sourceIndex:i})).filter(p=>!$("category").value||p.category.includes($("category").value));index=keep?Math.max(0,filtered.findIndex(p=>p.sourceIndex===last?.sourceIndex)):0;if(index>=filtered.length)index=0;
 $("jump").replaceChildren(...filtered.map((p,i)=>{const o=document.createElement("option");o.value=i;o.textContent=(i+1)+". "+p.title;return o}));draw()}

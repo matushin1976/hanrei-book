@@ -41,7 +41,6 @@ const PAGES = [
   }
   ,{
     title: "在外邦人選挙権訴訟",
-    imagePendingFile: "a_colorful_hand_drawn_crayon_colored_pencil_illust.png",
     date: "2005-09-14",
     category: "憲法・行政法｜選挙権・立法不作為・国家賠償｜最高裁大法廷 平成17年9月14日",
     image: "https://drive.google.com/thumbnail?id=19oXETFET1bb62QoYm-Kfd-0uzj87_YYE&sz=w1600",
@@ -116,12 +115,12 @@ const PAGES = [
     "title": "通常損耗補修特約と敷金返還（平成17年判決）",
     "date": "2005-12-16",
     "category": "民法｜賃貸借・通常損耗・敷金返還｜最高裁第二小法廷 平成17年12月16日",
-    "image": "",
-    "imageSource": "",
-    "imagePendingFile": "012-shikikin-tsujo-sonmo.png",
+    "image": "https://drive.google.com/thumbnail?id=1k-Nuc5yvv_pfir0KvoOvJxuVyBKXq3Zx&sz=w1600",
+    "imageSource": "https://drive.google.com/file/d/1k-Nuc5yvv_pfir0KvoOvJxuVyBKXq3Zx/view",
+    "imagePendingFile": "",
     "story": "賃貸住宅を退去した借主が敷金の返還を求めた。貸主側は賃貸借契約の修繕費負担条項を根拠に、普通に生活するだけで生じる汚れや傷み（通常損耗）の補修費も借主が負担すると主張した。",
     "judgment": "最高裁は、通常損耗の補修費は原則として賃料に含まれるとし、借主に特別に負担させるには、負担する通常損耗の範囲が契約書に具体的に明記されているか、貸主が口頭で説明して借主が明確に認識し合意していることが必要とした。本件ではそのような合意は認められなかった。",
-    "point": "通常損耗と借主の故意・過失による損傷は区別。通常損耗補修特約には明確な合意が必要。現在は民法621条が通常損耗・経年変化を原状回復義務から除くことを明文化している。画像はGoogleドライブへの転送が拒否されたため未登録。"
+    "point": "通常損耗と借主の故意・過失による損傷は区別。通常損耗補修特約には明確な合意が必要。現在は民法621条が通常損耗・経年変化を原状回復義務から除くことを明文化している。"
   }
 ,
 {

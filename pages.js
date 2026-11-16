@@ -124,8 +124,8 @@ const PAGES = [
   "title": "個人タクシー事件",
   "date": "1971-10-28",
   "category": "行政法｜行政手続・公正な審査手続｜最高裁第一小法廷 昭和46年10月28日",
-  "image": "https://drive.google.com/thumbnail?id=1W6z20EEPOKSm0zziVFjV115m1GA5F72B&sz=w1600",
-  "imageSource": "https://drive.google.com/file/d/1W6z20EEPOKSm0zziVFjV115m1GA5F72B/view",
+  "image": "https://drive.google.com/thumbnail?id=1teZFzFjpOjKwb3EyvNxetgn4dh8MI-1t&sz=w1600",
+  "imageSource": "https://drive.google.com/file/d/1teZFzFjpOjKwb3EyvNxetgn4dh8MI-1t/view",
     "story": "個人タクシーの営業免許を申請した運転手が、審査基準の一部について十分な説明や反論の機会を与えられないまま不許可とされた。審査の進め方が公正だったかが争われた。",
   "judgment": "最高裁は、免許審査に当たり申請者に不利益な事情について説明・反論する機会を与えるなど、公正な手続を尽くすべき場合があるとし、審査手続の瑕疵を理由に不許可処分の違法性を認めた。",
   "point": "裁量が認められる免許処分でも審査手続が無制約になるわけではない。行政手続法制定前の判例であり、現在の申請に対する審査基準の設定・公表（行政手続法5条）、拒否処分の理由提示（8条）とも関連づけて覚える。"
@@ -135,8 +135,8 @@ const PAGES = [
   "title": "河川附近地制限令事件",
   "date": "1968-11-27",
   "category": "行政法｜損失補償・憲法29条3項｜最高裁大法廷 昭和43年11月27日",
-  "image": "https://drive.google.com/thumbnail?id=1B8ECiRk7faaLyCX7e4tCLfBcW7wfWUJA&sz=w1600",
-  "imageSource": "https://drive.google.com/file/d/1B8ECiRk7faaLyCX7e4tCLfBcW7wfWUJA/view",
+  "image": "https://drive.google.com/thumbnail?id=1gIBM7SLVwBxEDuQOB-goUYc0vEQWwnTU&sz=w1600",
+  "imageSource": "https://drive.google.com/file/d/1gIBM7SLVwBxEDuQOB-goUYc0vEQWwnTU/view",
     "story": "名取川の河川附近地で砂利を採取していた業者は、地域指定により知事の許可が必要になった後も無許可で採取を続け、起訴された。補償規定がない制限は憲法29条3項に違反して無効だと主張した。",
   "judgment": "最高裁大法廷は上告を棄却。河川管理のための一般的な許可制は通常受忍すべき制限で、補償規定がなくても直ちに違憲ではない。ただし一般的な受忍限度を超える特別の犠牲があるなら、憲法29条3項を直接の根拠として別途補償請求できる余地があるとした。",
   "point": "一般的制限は原則補償不要。特別の犠牲には補償の余地があり、法令に補償規定がないだけで直ちに違憲とはならない。最高裁は本件で補償金の支払を命じたわけではない。"
